@@ -1,0 +1,140 @@
+.Navbar{
+    width: 92%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.Icon{
+    width: 7vw;
+    height: 25vh;
+    cursor: pointer;
+    border: 2px;
+    border-radius: 100%;
+    transition: 0.6s ease-out;
+}
+
+.Navbar-menu{
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.8rem;
+    font-family: "Caveat", cursive;
+}
+
+.Navbar-menu .active{
+    border-bottom-color: var(--theme-color);
+}
+
+.Navbar-menu li{
+    cursor: pointer;
+    transition: 0.6s ease-out ;
+    border-bottom: 2px solid transparent;
+    color: var(--theme-color);
+}
+
+.Navbar-menu li:hover{
+    border-bottom-color: var(--theme-color);
+    transform: translateY(-4px);
+}
+
+.Navbar-right{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    gap: 1.9vw;
+}
+
+.Favourites_icon{
+    width: 2vw;
+    height: 2vw;
+    transition: 0.6s ease-out;
+    cursor: pointer;
+}
+
+.Favourites_icon:hover,.Icon:hover{
+    transform: translateY(-6px);
+}
+
+.Navbar-right button{
+    background: var(--theme-color);   
+    color: white;
+    font-family: "Caveat", cursive;
+    font-size: 1.2rem;
+    border: 1px solid var(--theme-color);
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.6s ease-out ;
+}
+
+.Navbar button:hover{
+    background-color:transparent;
+    color: var(--theme-color);
+    transform: translateY(-4px);
+}
+
+@media screen and (max-width: 768px) {
+  .Navbar {
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .Icon {
+    width: 15vw;
+    height: auto;
+  }
+
+  .Navbar-menu {
+    gap: 3vw;
+    font-size: 1.4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .Favourites_icon {
+    width: 1vw;
+    height: 2vw;
+  }
+
+  .Navbar-right button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Navbar {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .Icon {
+    width: 20vw;
+    height: auto;
+  }
+
+  .Navbar-menu {
+    gap: 2vw;
+    font-size: 1.2rem;
+  }
+
+  .Favourites_icon {
+    width: 5vw;
+    height: 5vw;
+  }
+
+  .Navbar-right {
+    gap: 1vw;
+  }
+
+  .Navbar-right button {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+}

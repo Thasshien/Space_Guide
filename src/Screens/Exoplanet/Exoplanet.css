@@ -1,0 +1,80 @@
+.Exoplanetdisplay{  
+    display: flex;
+    flex-direction: column;
+    width:95%;
+    margin: 0 auto;
+    padding: 7vh 0 0 0;
+}
+
+.Exoplanetdisplay h1{
+    text-align: center;
+    font-family: "Caveat", cursive;
+    font-size: 2.8rem;
+}
+
+.Objects{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    margin: 30px;
+    column-gap: 40px;
+    padding: 0 0 0 4.5vw;
+    row-gap: 50px;
+    font-size: 1.2rem;
+}
+
+.loading{
+    padding: 10vh 0 39vh 38vw;
+    font-size: 3rem;
+}
+
+.search-bar {
+  padding: 0.6rem 1rem;
+  width: 60%;
+  max-width: 400px;
+  margin: 1rem auto;
+  display: block;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+}
+
+@media screen and (max-width: 768px) {
+  .Objects {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    margin: 20px;
+    column-gap: 30px;
+    padding-left: 2vw;
+    row-gap: 40px;
+  }
+
+  .Exoplanetdisplay h1 {
+    font-size: 2.2rem;
+  }
+
+  .search-bar {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Objects {
+    grid-template-columns: 1fr;
+    margin: 15px;
+    padding-left: 1.5vw;
+    row-gap: 30px;
+    column-gap: 0;
+  }
+
+  .Exoplanetdisplay h1 {
+    font-size: 1.8rem;
+  }
+
+  .loading {
+    padding: 10vh 0 20vh 10vw;
+    font-size: 2rem;
+  }
+
+  .search-bar {
+    width: 90%;
+  }
+}

@@ -1,0 +1,79 @@
+.apod-page{
+    width: 92%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+}
+
+.apod-page h1{
+    padding: 8vh 0 0 0;
+    font-family: "Caveat", cursive;
+    font-size: 2.7rem;
+}
+
+.apod-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vw;
+    font-family: "Caveat", cursive;
+}
+
+.apod-content h2{
+    font-size: 1.8rem;
+}
+
+.apod-content p{    
+    font-size: 1.4rem;
+}
+
+.apod-content img{
+    width: 98.9vw;
+}
+
+.apod-desc{
+    text-align: justify;
+    padding: 0 0 10vh 0;
+}
+
+@media screen and (max-width: 768px) {
+  .apod-page h1 {
+    font-size: 2.2rem;
+  }
+
+  .apod-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .apod-content p {
+    font-size: 1.2rem;
+  }
+
+  .apod-desc {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .apod-page h1 {
+    font-size: 1.8rem;
+  }
+
+  .apod-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .apod-content p {
+    font-size: 1.05rem;
+  }
+
+  .apod-desc {
+    font-size: 1rem;
+  }
+
+  .apod-content img {
+    width: 95vw;
+  }
+}

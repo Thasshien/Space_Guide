@@ -1,0 +1,96 @@
+.earth-view {
+  padding: 20px;
+  text-align: center;
+}
+
+input[type="date"] {
+  margin: 10px;
+  padding: 5px;
+  font-size: 1rem;
+}
+
+.earth-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.earth-image-card {
+  width: 300px;
+  border: 1px solid #333;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #111;
+  color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+.earth-image-card img {
+  width: 100%;
+  height: auto;
+}
+
+.earth-view h1{
+  font-size: 3rem;
+  font-family: "Caveat", cursive;
+  padding: 0 0 9vh 0;
+}
+
+.earth-view p{
+  font-size: 1.1rem;
+  font-family: "Caveat", cursive;
+}
+
+.earth-view label{
+  font-size: 1.5rem;
+  font-family: "Caveat", cursive;
+}
+
+.loading{
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .earth-image-card {
+    width: 45%;
+  }
+  
+  .earth-view h1 {
+    font-size: 2.5rem;
+    padding-bottom: 6vh;
+  }
+  
+  .earth-view p {
+    font-size: 1rem;
+  }
+  
+  .earth-view label {
+    font-size: 1.3rem;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .earth-image-card {
+    width: 90%;
+  }
+  
+  input[type="date"] {
+    max-width: 100%;
+  }
+
+  .earth-view h1 {
+    font-size: 2rem;
+    padding-bottom: 4vh;
+  }
+  
+  .earth-view p {
+    font-size: 0.9rem;
+  }
+  
+  .earth-view label {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,66 @@
+.about-nasa{
+    width: 90%;
+    padding: 0 0 0 10vh;
+    margin:0 auto;
+}
+
+.about-nasa h2{
+    font-size: 2.5rem;
+    padding:7vh 0 3vh 0;
+    font-family: "Caveat", cursive;
+}
+
+.about-nasa p{
+    font-size: 1.4rem;
+    padding: 3vh 0 2vh 0;
+    font-family: "Caveat", cursive;
+    color: var(--theme-color);
+
+}
+
+.about-nasa .note{
+    padding-bottom: 8vh;
+}
+
+.about-nasa a{
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.6s ease-out   
+}
+
+.about-nasa a:hover{
+    transform: translateY(-6px);
+}
+
+@media screen and (max-width: 768px) {
+  .about-nasa {
+    padding: 0 2rem;
+  }
+
+  .about-nasa h2 {
+    font-size: 2rem;
+    padding: 5vh 0 2vh 0;
+  }
+
+  .about-nasa p {
+    font-size: 1.2rem;
+    padding: 2vh 0 1.5vh 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-nasa {
+    padding: 0 1rem;
+  }
+
+  .about-nasa h2 {
+    font-size: 1.8rem;
+    padding: 4vh 0 1.5vh 0;
+  }
+
+  .about-nasa p {
+    font-size: 1rem;
+    padding: 1.5vh 0 1vh 0;
+  }
+}

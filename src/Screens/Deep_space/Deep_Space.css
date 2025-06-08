@@ -1,0 +1,109 @@
+.deep-space {
+  padding: 2rem;
+  text-align: center;
+  font-family: "Caveat", cursive;
+}
+
+.category-buttons {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.category-buttons button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #222;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.category-buttons .active {
+  background: var(--theme-color);
+  color: white;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.image-card img {
+  width: 100%;
+  border-radius: 12px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.image-card h4 {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.deep-space h1{
+    padding: 0 0 10vh 0;
+}
+
+.deep-space .category-buttons h5{
+    padding: 0;
+    font-size: 1.2rem;
+    font-family: "Caveat", cursive;
+}
+
+@media screen and (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+
+  .image-card img {
+    height: 160px;
+  }
+
+  .category-buttons button {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .deep-space h1 {
+    font-size: 2rem;
+    padding-bottom: 7vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+
+  .image-card img {
+    height: 140px;
+  }
+
+  .category-buttons {
+    gap: 0.7rem;
+  }
+
+  .category-buttons button {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .deep-space h1 {
+    font-size: 1.7rem;
+    padding-bottom: 5vh;
+  }
+
+  .deep-space .category-buttons h5 {
+    font-size: 1rem;
+  }
+}

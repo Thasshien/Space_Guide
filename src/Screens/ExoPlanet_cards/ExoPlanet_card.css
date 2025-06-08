@@ -1,0 +1,17 @@
+.Exoplanets{
+    width: 100%;
+    border-radius: 15px;
+    height:100%;
+    box-shadow: 0 0 10px #00000015;
+    transition: 0.3s;
+    animation: fadeIn 1.8s ease-in-out;
+    background-color: var(--theme-color);
+    color: white;
+    padding:30px;
+    cursor: pointer;
+    font-family: "Caveat", cursive;
+}
+
+.Exoplanets:hover{
+    transform: translateY(-6px);
+}

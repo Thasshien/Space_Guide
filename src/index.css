@@ -1,0 +1,94 @@
+:root{
+    --theme-color: #0a205a;
+}
+
+@keyframes fadeIn {
+  from { 
+    opacity: 0;                  
+  }
+  to {    
+    opacity: 1;                  
+  }
+}
+
+html{
+    font-size: 82.5%;
+}
+
+body,html{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.6s ease-out;
+}
+
+*,*::before,*::after{
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 98.9vw;
+}
+
+html .dark{
+  color: white;
+  background-color:var(--theme-color);
+}
+
+html .dark button{
+  background-color: white;
+  color: var(--theme-color);
+}
+
+html .dark button:hover{
+  background-color: var(--theme-color); 
+  color: white;
+}
+
+html .dark .Navbar li{
+  color: white;
+}
+
+html .dark .Navbar li:hover{
+  border-bottom-color: white; 
+}
+
+html .dark .Navbar .active{
+  border-bottom-color: white; 
+}
+
+html .dark .Navbar .Icon{
+  background-color: white;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+html .dark .Footer{
+  background-color: rgba(225, 225, 225, 0.9);
+  color: var(--theme-color);
+}
+
+html .dark .Footer a{
+  color: var(--theme-color);
+}
+
+html .dark .about-nasa a{
+  color: white;
+}
+
+html .dark .about-nasa p{
+  color: white;
+}
+
+html .dark .Features h2{
+  color: white;
+}
+
+html .dark .Exoplanets{
+  background-color: white;
+  color: var(--theme-color);
+}
