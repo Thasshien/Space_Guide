@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import './Deep_space.css';
+import './Deep_Space.css';
 
 const categories = [
   { name: 'Nebulae', query: 'nebula' },
