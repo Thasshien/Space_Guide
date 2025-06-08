@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { useEffect, useState } from 'react';
 import './Exoplanet.css';
 import Planet_card from '../ExoPlanet_cards/ExoPlanet_card';
-import Slider from '../../Components/Slider/Slider';
 
 const Exoplanet = () => {
   const [planets, setPlanets] = useState([]);

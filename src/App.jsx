@@ -9,7 +9,7 @@ import Favourites from './Screens/Favourites/Favourites'
 import Footer from "./Components/Footer/Footer"
 import Exoplanet from './Screens/Exoplanet/Exoplanet' 
 import EarthView from './Screens/Our_Planet/Our_planet';
-import DeepSpace from './Screens/Deep_space/Deep_space';
+import DeepSpace from './Screens/Deep_space/Deep_Space';
 
 function App() {
   const [count, setCount] = useState(0)
